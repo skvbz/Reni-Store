@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav1">
+      <div class="nav2">
+        <div class="nav3">
+          <!-- Left Nav -->
+          <div class="left-nav">
+            <a href="index.html"
+              ><img src="./img/reni.store - logo.png" alt=""
+            /></a>
+            <input type="text" placeholder="Search Here" class="search" />
+          </div>
+
+          <!-- Right Nav -->
+          <div class="right-nav">
+            <img src="./img/Vector.png" alt="" />
+            <img src="./img/Group 17.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav -->
+    <div class="navbar">
+      <div class="navbar-menu">
+        <div class="navbar-logo-1">
+          <img src="./img/reni.store - logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="right-navbar">
+        <a href="#"><img src="./img/Vector.png" alt="" /></a>
+        <a href="#"><img src="./img/Group 17.png" alt="" /></a>
+        <div class="lines" id="menuIcon">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-nav Ends -->
+
+    <section class="main1">
+      <div class="main2">
+        <div class="main3">
+          <div class="page-teller">
+            <h2>Products</h2>
+            <img src="./img/Ellipse 76.png" alt="" />
+            <h2 class="personalized">Personalized T-Shirt</h2>
+          </div>
+          <div class="product-grid">
+            <div class="item-view">
+              <img src="./img/Ladies Tri-Blend Tshirt Mockups label.png" alt="" />
+              <img src="./img/Ladies Tri-Blend Tshirt Mockups label side.png" alt="" />
+              <img src="./img/Group 3.png" alt="" />
+            </div>
+            <div class="item-display1">
+                <div class="item-display2">
+                    <div class="item-display3">
+                        <div class="zoom">
+                            <button onclick="decreaseImageSize()" class="size">-</button>
+                            <p>50%</p>
+                            <button onclick="increaseImageSize()" class="size">+</button>
+                        </div>
+                        <div class="display-photo">
+                            <img src="./img/Ladies Tri-Blend Tshirt Mockups label.png" alt="" id="myImage">
+                        </div>
+                        <div class="play-video">
+                            <button id="video-btn"><img src="./img/Frame 10.png" alt="">PLAY VIDEO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="genre">
+                    <h4>FASHION</h4>
+                    <img src="./img/Vector love.png" alt="">
+                </div>
+                <div id="title-heading">
+                    <h1>Personalized T-Shirt</h1>
+                </div>
+                <div id="sizenrate">
+                    <h1>Size: <span>XL</span></h1>
+                    <img src="" alt="">
+                </div>
+                <div class="quantity">
+                    <h1>Quantity</h1>
+                    <div class="qty-num">
+                        <button class="qty-btn">-</button>
+                        <p class="qty-amnt">1</p>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <h1>$400.00</h1>
+                </div>
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                    <div class="tags">
+                        <h4>Tags</h4>
+                        <div class="tags-btn">
+                            <button>Vintage</button>
+                            <button>Glam</button>
+                            <button>Durable</button>
+                            <button>Luxury</button>
+                        </div>
+                    </div>
+                    <div class="size-tag">
+                        <h4>Select Size (US)</h4>
+                        <div class="sizetag-btn">
+                            <button>8</button>
+                            <button>8.5</button>
+                            <button>9</button>
+                            <button>9.5</button>
+                            <button>10</button>
+                        </div>
+                    </div>
+                    <div class="color">
+                        <h4>Select Color</h4>
+                        <div class="color-btn">
+                            <button class="color-btn1"></button>
+                            <button class="color-btn2"></button>
+                            <button class="color-btn3"></button>
+                            <button class="color-btn4"></button>
+                        </div>
+                    </div>
+                    <div class="purchase">
+                        <button id="buy">BUY NOW</button>
+                        <button id="add">ADD TO CART </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="gifts.js"></script>
+  </body>
+</html>
