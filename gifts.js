@@ -1,28 +1,24 @@
 // Declaration
 const searchInput = document.querySelector('.search');
 const searchInputTwo = document.querySelector('.search2');
+const catalogs = document.querySelectorAll('.catalog');
 
-// Add event listener for keyup event
+// Add event listener for input event
 searchInput.addEventListener('input', function(event) {
   const searchTerm = event.target.value.toLowerCase();
-  const wearsTypes = document.querySelectorAll('.wears-types');
 
   // loop through wears type and display search result
-  wearsTypes.forEach(function(wearsType) {
-    const link = wearsType.querySelector('a');
-    const type = link.textContent.toLowerCase();
+  catalogs.forEach(function(catalog) {
+    const title = catalog.querySelector('h3').textContent.toLowerCase();
 
-    if (type.includes(searchTerm)) {
-      wearsType.style.display = 'block';
+    if (title.includes(searchTerm)) {
+      catalog.style.display = 'block';
     } else {
-      wearsType.style.display = 'none';
+      catalog.style.display = 'none';
     }
   });
-});
+});;
 
-
-// Search catalog items
-const catalogs = document.querySelectorAll('.catalog');
 
 // Add event listener for input event
 searchInputTwo.addEventListener('input', function(event) {
