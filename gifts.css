@@ -546,6 +546,11 @@ a {
     .top-rated3 h4 {
         width: 20%;
     }
+
+    .catalog button {
+        width: 85%;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 506px) {
@@ -571,5 +576,10 @@ a {
 
     .catalog img {
         width: 80%;
+    }
+
+    .catalog button {
+        width: 85%;
+        font-size: 12px;
     }
 }
