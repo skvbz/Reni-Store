@@ -509,4 +509,12 @@ a {
     .new-releasecont3 p {
         width: 69%;
     }
+
+    .nav1 {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
 }
