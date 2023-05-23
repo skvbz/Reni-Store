@@ -146,6 +146,7 @@
 }
 
 /* 3 grid view */
+/* 1st Grid */
 .product-grid {
     width: 100%;
     display: grid;
@@ -160,7 +161,7 @@
     padding-top: 50px;
     place-content: center;
     gap: 50px;
-    height: 88vh;
+    height: 82vh;
     align-items: center;
     justify-content: center;
 }
@@ -176,26 +177,26 @@
     width: 120px;
 }
 
+/* 2nd Grid */
 .item-display1 {
-    background-color: #f6f6f6;
     width: 100%;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    height: 88vh;
-    padding:25px;
+    gap: 100px;
 }
 
 .item-display2 {
     width: 90%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding:25px;
+    height: 82vh;
 }
 
 .item-display3 {
     width: 100%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -251,6 +252,73 @@
     font-weight: 700;
 }
 
+.top-rated3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    gap: 40px;
+}
+
+.top-rated3 h4 {
+    width: 20%;
+    font-size: 18px;
+    border-top: 2px solid;
+    padding-top: 5px;
+    border-radius: 10px;
+    border-image: linear-gradient(120deg, #0d51cf, #fff)1;
+}
+
+.women-catalog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+}
+
+.catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.catalog img {
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.catalog h3 {
+    color: #7E7E7E;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+.catalog h5 {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.catalog button {
+    width: 100%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* 3rd Grid */
 .item-info {
     width: 100%;
     padding: 20px;
