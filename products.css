@@ -156,12 +156,6 @@
     margin-top: 20px;
 }
 
-.review-row {
-    width: 85%;
-    display: flex;
-    gap: 10px;
-}
-
 .item-view {
     width: 10%;
     display: flex;
@@ -183,6 +177,12 @@
 
 .item-view img {
     width: 120px;
+}
+
+.review-row {
+    width: 85%;
+    display: flex;
+    gap: 10px;
 }
 
 /* 2nd Grid */
