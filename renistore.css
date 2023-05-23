@@ -275,6 +275,10 @@ a {
     width: auto;
 }
 
+.navbar {
+    display: none;
+}
+
 /* Responsiveness */
 
 @media (max-width:1166px) {
