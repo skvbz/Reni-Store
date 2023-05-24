@@ -808,4 +808,19 @@ a {
     }
 }
 
+@media (max-width: 282px) {
+    .new-release h4 {
+        width: 40%;
+    }
+    
+    .new-releasecont3 h1 {
+        font-size: 20px;
+    }
+
+    .new-releasecont3 p {
+        width: 63%;
+        font-size: 15px;
+    }
+}
+
 
