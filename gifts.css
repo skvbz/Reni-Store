@@ -583,3 +583,29 @@ a {
         font-size: 12px;
     }
 }
+
+@media (max-width: 506px) {
+    .new-release h4 {
+        width: 25%;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .new-release {
+        width: 88%;
+    }
+
+    .women-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .top-rated3 h4 {
+        width: 20%;
+    }
+
+    .catalog img {
+        width: 80%;
+    }
+} 
