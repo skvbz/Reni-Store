@@ -844,6 +844,16 @@ a {
     }   
 }
 
+@media (max-width: 294px) {
+    .navbar {
+        width: 87%;
+    }
+
+    .right-navbar {
+        gap: 14px;
+    }
+}
+
 @media (max-width: 282px) {
     .new-release h4 {
         width: 40%;
@@ -856,5 +866,11 @@ a {
     .new-releasecont3 p {
         width: 63%;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 273px){
+    .new-release h4 {
+        width: 45%;
     }
 }
