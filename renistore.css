@@ -780,16 +780,12 @@ a {
         width: 35%;
     }
 
-    .new-releasecont3 button {
-        width: 40%;
-    }
-
     .top-rated3 h4 {
-        width: 35%;
+        width: 30%;
     }
 
-    .catalog h3 {
-        font-size: 16.5px;
+    .new-releasecont3 button {
+        width: 30%;
     }
 }
 
