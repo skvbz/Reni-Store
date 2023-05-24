@@ -791,7 +791,7 @@ a {
 
 @media (max-width:336px) {
     .new-release h4 {
-        width: 32%;
+        width: 40%;
     }
 
     .new-releasecont3 button {
@@ -804,6 +804,12 @@ a {
 
     .catalog h3 {
         font-size: 16.5px;
+    }
+}
+
+@media (max-width:328px) {
+    .navbar {
+        width: 87%;
     }
 }
 
