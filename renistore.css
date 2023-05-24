@@ -775,6 +775,24 @@ a {
     }
 }
 
+@media (max-width:340px) {
+    .new-release h4 {
+        width: 35%;
+    }
+
+    .new-releasecont3 button {
+        width: 40%;
+    }
+
+    .top-rated3 h4 {
+        width: 35%;
+    }
+
+    .catalog h3 {
+        font-size: 16.5px;
+    }
+}
+
 @media (max-width:336px) {
     .new-release h4 {
         width: 32%;
@@ -812,7 +830,7 @@ a {
     .new-release h4 {
         width: 40%;
     }
-    
+
     .new-releasecont3 h1 {
         font-size: 20px;
     }
