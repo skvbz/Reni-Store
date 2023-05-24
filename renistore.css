@@ -838,6 +838,12 @@ a {
     }
 }
 
+@media (max-width: 301px) {
+    .new-release h4 {
+        width: 40%;
+    }   
+}
+
 @media (max-width: 282px) {
     .new-release h4 {
         width: 40%;
