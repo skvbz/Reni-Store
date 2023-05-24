@@ -775,6 +775,16 @@ a {
     }
 }
 
+@media (max-width: 358px) {
+    .new-release h4 {
+        width: 35%;
+    }
+
+    .new-releasecont3 button {
+        width: 30%;
+    }
+}
+
 @media (max-width:340px) {
     .new-release h4 {
         width: 35%;
@@ -842,5 +852,3 @@ a {
         font-size: 15px;
     }
 }
-
-
