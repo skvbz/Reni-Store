@@ -769,6 +769,10 @@ a {
         width: 60%;
         font-size: 18px;
     }
+
+    .catalog h3 {
+        font-size: 16.5px;
+    }
 }
 
 @media (max-width:336px) {
@@ -782,6 +786,10 @@ a {
 
     .top-rated3 h4 {
         width: 35%;
+    }
+
+    .catalog h3 {
+        font-size: 16.5px;
     }
 }
 
