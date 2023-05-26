@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="renistore.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Reni Store</title>
   </head>
   <body>
     <div class="nav1">
       <div class="nav2">
-        <div class="nav3">
+        <div class="  nav3">
           <!-- Left Nav -->
           <div class="left-nav">
             <a href="./renistore.html"
@@ -22,7 +23,8 @@
           <!-- Right Nav -->
           <div class="right-nav">
             <img src="./img/Vector.png" alt="" />
-            <img src="./img/Group 17.png" alt="" />
+            <span id="cart-icon" class="fas fa-shopping-cart"></span>
+            <span id="cart-count">0</span>
           </div>
         </div>
       </div>
@@ -103,7 +105,7 @@
                     Show them the love this summer, and get 50% off your
                     purchase
                   </p>
-                  <button>Shop Now</button>
+                  <a href="./products.html"><button>Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -190,5 +192,38 @@
       </div>
     </section>
     <script src="gifts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  // Get the "Add To Cart" buttons
+  const addToCartButtons = document.querySelectorAll('.catalog button');
+
+  // Get the cart icon and count elements
+  const cartIcon = document.getElementById('cart-icon');
+  const cartCount = document.getElementById('cart-count');
+
+  // Initialize cart count
+  let itemCount = 0;
+
+  // Add event listeners to each "Add To Cart" button
+  addToCartButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      // Increment item count
+      itemCount++;
+
+      // Update cart count
+      cartCount.textContent = itemCount;
+
+      // Update cart icon to indicate an item has been added
+      cartIcon.classList.add('cart-added');
+
+      // Reset cart icon after 1 second
+      setTimeout(() => {
+        cartIcon.classList.remove('cart-added');
+      }, 1000);
+    });
+  });
+});
+
+    </script>
   </body>
 </html>

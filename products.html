@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="products.css" />
-    <title>Document</title>
+    <title>Product Check</title>
   </head>
   <body>
     <div class="nav1">
@@ -22,7 +23,8 @@
           <!-- Right Nav -->
           <div class="right-nav">
             <img src="./img/Vector.png" alt="" />
-            <img src="./img/Group 17.png" alt="" />
+            <span id="cart-icon" class="fas fa-shopping-cart"></span>
+            <span id="cart-count">0</span>
           </div>
         </div>
       </div>
@@ -69,9 +71,9 @@
                     <div class="item-display2">
                         <div class="item-display3">
                             <div class="zoom">
-                                <button onclick="decreaseImageSize()" class="size">-</button>
+                                <button onclick="decreaseImageSize()" class="size" id="zoom-out">-</button>
                                 <p>50%</p>
-                                <button onclick="increaseImageSize()" class="size">+</button>
+                                <button onclick="increaseImageSize()" class="size" id="zoom-out">+</button>
                             </div>
                             <div class="display-photo">
                                 <img src="./img/Ladies Tri-Blend Tshirt Mockups label.png" alt="" id="myImage">
@@ -121,9 +123,9 @@
                     <div class="quantity">
                         <h1>Quantity</h1>
                         <div class="qty-num">
-                            <button class="qty-btn">-</button>
-                            <p class="qty-amnt">1</p>
-                            <button class="qty-btn">+</button>
+                            <button class="qty-btn" id="decrease">-</button>
+                            <p class="qty-amount">1</p>
+                            <button class="qty-btn" id="increase">+</button>
                         </div>
                     </div>
                     <div class="price">
@@ -232,6 +234,18 @@
         </div>
       </div>
     </section>
+    <script src="./products.js"></script>
     <script src="gifts.js"></script>
+    <script>
+      
+
+
+
+    </script>
+
+    <script>
+      
+
+    </script>
   </body>
 </html>

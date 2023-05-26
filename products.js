@@ -1,40 +1,64 @@
-// Declaration
-const searchInput = document.querySelector('.search');
-const searchInputTwo = document.querySelector('.search2');
-const catalogs = document.querySelectorAll('.catalog');
+// Get the necessary elements
+const decreaseButton = document.getElementById('decrease');
+const increaseButton = document.getElementById('increase');
+const quantityAmount = document.querySelector('.qty-amount');
+const priceElement = document.querySelector('.price h1');
 
-// Add event listener for input event
-searchInput.addEventListener('input', function(event) {
-  const searchTerm = event.target.value.toLowerCase();
+// Initial price and quantity
+let price = 400.00;
+let quantity = 1;
 
-  // loop through wears type and display search result
-  catalogs.forEach(function(catalog) {
-    const title = catalog.querySelector('h3').textContent.toLowerCase();
+// Function to update the quantity and price
+function updateQuantityAndPrice() {
+  quantityAmount.textContent = quantity;
+  priceElement.textContent = `$${price.toFixed(2)}`;
+}
 
-    if (title.includes(searchTerm)) {
-      catalog.style.display = 'block';
-    } else {
-      catalog.style.display = 'none';
-    }
-  });
-});;
-
-
-// Add event listener for input event
-searchInputTwo.addEventListener('input', function(event) {
-  const searchTerm = event.target.value.toLowerCase();
-
-  // loop through wears type and display search result
-  catalogs.forEach(function(catalog) {
-    const title = catalog.querySelector('h3').textContent.toLowerCase();
-
-    if (title.includes(searchTerm)) {
-      catalog.style.display = 'block';
-    } else {
-      catalog.style.display = 'none';
-    }
-  });
+// Event listener for the decrease button
+decreaseButton.addEventListener('click', function() {
+  if (quantity > 1) {
+    quantity--;
+    price -= 400.00;
+    updateQuantityAndPrice();
+  }
 });
+
+// Event listener for the increase button
+increaseButton.addEventListener('click', function() {
+  quantity++;
+  price += 400.00;
+  updateQuantityAndPrice();
+});
+
+
+
+
+// Get the necessary elements
+const imageSizeElement = document.getElementById('image-size');
+const imageElement = document.getElementById('myImage');
+let imageSize = 50;
+
+// Function to update the image size
+function updateImageSize() {
+  imageElement.style.width = `${imageSize}%`;
+  imageSizeElement.textContent = `${imageSize}%`;
+}
+
+// Function to increase image size
+function increaseImageSize() {
+  if (imageSize < 100) {
+    imageSize += 10;
+    updateImageSize();
+  }
+}
+
+// Function to decrease image size
+function decreaseImageSize() {
+  if (imageSize > 10) {
+    imageSize -= 10;
+    updateImageSize();
+  }
+}
 
 // Get the "Add To Cart" buttons
 const addToCartButtons = document.querySelectorAll('.catalog button');
@@ -99,8 +123,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-
-
-

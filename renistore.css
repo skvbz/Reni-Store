@@ -317,6 +317,30 @@ a {
     gap: 40px;
 }
 
+.right-nav {
+    position: relative;
+  }
+  
+  #cart-icon {
+    display: inline-block;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
 .lines {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,4 @@
 const searchInput = document.querySelector('.search');
-
 const catalogs = document.querySelectorAll('.catalog');
 
 // Add event listener for input event
