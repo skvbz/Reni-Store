@@ -20,21 +20,22 @@ searchInput.addEventListener('input', function(event) {
 });;
 
 
-// Add event listener for input event
-searchInputTwo.addEventListener('input', function(event) {
-  const searchTerm = event.target.value.toLowerCase();
+// // Add event listener for input event
+// searchInputTwo.addEventListener('input', function(event) {
+//   const searchTerm = event.target.value.toLowerCase();
 
-  // loop through wears type and display search result
-  catalogs.forEach(function(catalog) {
-    const title = catalog.querySelector('h3').textContent.toLowerCase();
+//   // loop through wears type and display search result
+//   catalogs.forEach(function(catalog) {
+//     const title = catalog.querySelector('h3').textContent.toLowerCase();
 
-    if (title.includes(searchTerm)) {
-      catalog.style.display = 'block';
-    } else {
-      catalog.style.display = 'none';
-    }
-  });
-});
+//     if (title.includes(searchTerm)) {
+//       catalog.style.display = 'block';
+//     } else {
+//       catalog.style.display = 'none';
+//     }
+//   });
+// });
+
 
 // Get the "Add To Cart" buttons
 const addToCartButtons = document.querySelectorAll('.catalog button');
@@ -100,7 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const open = document.getElementById('menuIcon')
+const menu = document.querySelector('.mobile-nav')
+const close = document.getElementById('closeIcon')
 
+open.addEventListener('click',()=>{
+  console.log('open')
+  menu.classList.add('show-nav')
+})
+
+close.addEventListener('click',()=>{
+  console.log('close')
+  menu.classList.remove('show-nav')
+})
 
 
 
