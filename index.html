@@ -231,38 +231,5 @@
       </div>
     </section>
     <script src="gifts.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-  // Get the "Add To Cart" buttons
-  const addToCartButtons = document.querySelectorAll('.catalog button');
-
-  // Get the cart icon and count elements
-  const cartIcon = document.getElementById('cart-icon');
-  const cartCount = document.getElementById('cart-count');
-
-  // Initialize cart count
-  let itemCount = 0;
-
-  // Add event listeners to each "Add To Cart" button
-  addToCartButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      // Increment item count
-      itemCount++;
-
-      // Update cart count
-      cartCount.textContent = itemCount;
-
-      // Update cart icon to indicate an item has been added
-      cartIcon.classList.add('cart-added');
-
-      // Reset cart icon after 1 second
-      setTimeout(() => {
-        cartIcon.classList.remove('cart-added');
-      }, 1000);
-    });
-  });
-});
-
-    </script>
   </body>
 </html>
