@@ -858,6 +858,12 @@ a {
     }
 }
 
+@media (max-width: 378px)  {
+    #cart-count{
+        right: 77px;
+    }
+}
+
 @media (max-width:370px) {
     .women-catalog {
         display: flex;

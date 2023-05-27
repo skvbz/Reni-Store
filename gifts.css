@@ -669,9 +669,15 @@ a {
 }
 
 @media (max-width: 493px) {
-    .gift-box h4{
+    .gift-box h4 {
         font-size: 17px;
         width: 50%;
+    }
+}
+
+@media (max-width: 451px) {
+    .top-rated3 h4 {
+        width: 25%;
     }
 }
 
@@ -690,5 +696,11 @@ a {
 @media (max-width:439px) {
     #cart-count {
         right: 88px;
+    }
+}
+
+@media (max-width: 378px)  {
+    #cart-count{
+        right: 77px;
     }
 }
