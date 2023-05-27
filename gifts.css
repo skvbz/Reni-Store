@@ -286,6 +286,17 @@ a {
     width: auto;
 }
 
+/* Hamburger */
+.mobile-nav
+
+.mtab-text {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Mobile Nav */
 .navbar {
     display: none;
@@ -337,6 +348,29 @@ a {
 
 .mobile-nav {
     display: none;
+}
+
+/* Hamburger */
+.mobile-nav .mtab-text {
+    width: 100%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.mwears-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mwears-types {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Responsiveness */
@@ -486,11 +520,12 @@ a {
         display: block;
         position: fixed;
         z-index: 100;
-        width: 100%;
+        width: 95%;
         background: #ffffff;
         top: 0;
         left: -100vw;
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
+        padding: 5px 10px;
     }
 
     .show-nav{
