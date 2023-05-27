@@ -534,7 +534,7 @@ a {
         display: block;
         position: fixed;
         z-index: 100;
-        width: 95%;
+        width: 100%;
         background: #ffffff;
         top: 0;
         left: -100vw;
