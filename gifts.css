@@ -354,7 +354,7 @@ a {
 .mobile-nav .mtab-text {
     width: 100%;
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
@@ -363,14 +363,28 @@ a {
 .mwears-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    padding-top: 20px;
 }
 
 .mwears-types {
     display: flex;
-    width: 45%;
+    width: 60%;
     justify-content: space-between;
     align-items: center;
+}
+
+#closeIcon {
+    font-size: 24px;
+}
+
+.mwears-types a {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mwears-types img {
+    width: 14%;
 }
 
 /* Responsiveness */
