@@ -88,3 +88,18 @@ addToCartButtons.forEach((button) => {
     }, 1000);
   });
 });
+
+// Hamburger
+const open = document.getElementById('menuIcon')
+const menu = document.querySelector('.mobile-nav')
+const close = document.getElementById('closeIcon')
+
+open.addEventListener('click',()=>{
+  console.log('open')
+  menu.classList.add('show-nav')
+})
+
+close.addEventListener('click',()=>{
+  console.log('close')
+  menu.classList.remove('show-nav')
+})

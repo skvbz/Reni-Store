@@ -231,7 +231,7 @@
     border-image: linear-gradient(120deg, #0d51cf, #fff)1;
 }
 
-.women-catalog {
+.women-catalog1, .women-catalog2 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -581,7 +581,7 @@ a {
         width: 100%;
     }
 
-    .women-catalog {
+    .women-catalog1, .women-catalog2 {
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -625,7 +625,7 @@ a {
 }
 
 @media (max-width:607px) {
-    .women-catalog {
+    .women-catalog1, .women-catalog2 {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -705,7 +705,7 @@ a {
         width: 88%;
     }
 
-    .women-catalog {
+    .women-catalog1, .women-catalog2 {
         grid-template-columns: repeat(2, 1fr);
     }
 

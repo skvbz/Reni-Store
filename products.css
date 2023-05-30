@@ -309,7 +309,7 @@
     border-image: linear-gradient(120deg, #0d51cf, #fff)1;
 }
 
-.women-catalog {
+.women-catalog1 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -337,6 +337,7 @@
     font-weight: 500;
     width: 100%;
     cursor: pointer;
+    text-align: center;
 }
 
 .catalog h5 {
@@ -851,14 +852,22 @@
 }
 
 @media (max-width: 841px) {
-    .women-catalog {
+    .women-catalog1 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 819px) {
     #video-btn {
-        width: 70%;
+        width: 80%;
+    }
+
+    .item-view {
+        padding-top: 0px;
+    }
+
+    .item-view img {
+        width: 80px;
     }
 
     #myImage {
@@ -874,7 +883,7 @@
     }
 
     .item-display2 {
-        height: 78vh;
+        height: 71vh;
     }
 
     .review-row {
@@ -896,20 +905,24 @@
         gap: 15px;
     }
 
-    .nav1 {
-        display: none;
-    }
-
-    .navbar {
-        display: flex;
-        padding:20px 0 0 20px;
-    }
-
     .product-grid {
-        width: 70%;
+        width: 80%;
         display: flex;
-        gap: 70px;
+        gap: 65px;
         margin-top: 20px;
+    }
+
+    .item-display2 {
+        width: 100%;
+    }
+
+    .quantity {
+        flex-direction: column;
+    }
+
+
+    .top-rated3 h4 {
+        width: 55%;
     }
 }
 
@@ -921,15 +934,69 @@
     .tags-btn button {
         padding: 20px;
     }
-}
 
-@media (max-width: 741px) { 
-    .navbar {
-        width: 90%;
+    .play-video {
+        padding-top: 20px;
     }
 
+    .item-view img {
+        width: 100px;
+    }
+
+    .item-view {
+        gap: 25px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    .tags-btn,
     .color-btn {
-        gap: 7px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tags-btn button {
+        width: 40%;
+        padding: 10px 40px;
+    }
+
+    .color-btn4,
+    .color-btn3,
+    .color-btn2,
+    .color-btn1 {
+        width: 60%;
     }
 }
 
+@media (max-width: 799px) {
+    .add-review {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .tags-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 752px) {
+    #video-btn {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 703px) {
+    .nav1 {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        padding: 15px;
+        width: 100%;
+    }
+}
